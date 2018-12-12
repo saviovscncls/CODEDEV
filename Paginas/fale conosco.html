@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>CodeDev - Contato</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../_css/principal.css">
+  <link rel="stylesheet" type="text/css" href="../_css/fale-conosco.css">
+  <link rel="shortcut icon" href="../_imgs/logo1.png" type="image/x-png"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+  <!-- NAVEGADOR  -->
+  <div class="titulo">
+    <img id="logo-titulo" src="../_imgs/CodeDev.png">
+  </div>
+  <div class="navbar">
+    <a href="principal.html"><i class="fas fa-home"></i> Home</a>
+    <a href="principal.html"><i class="fas fa-list-ul"></i> Cursos</a>
+    <a href="fale conosco.html"><i class="far fa-envelope"></i> Fale Conosco</a>
+    <button onclick="myFunction()" class="botao-user"><i class="fas fa-user"></i> Usuário</button>
+    <div id="drop-user" class="dropdown-user">
+      <a href="../index.html">Sair <i class="far fa-times-circle"></i></a>
+    </div>
+    <script>
+      function myFunction() {
+        document.getElementById("drop-user").classList.toggle("show");
+      }
+
+      window.onclick = function(event) {
+        if (!event.target.matches('.botao-user')) {
+
+          var dropdowns = document.getElementsByClassName("dropdown-user");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+    </div>
+
+    <h1>Entre em Contato</h1>
+    <form class="formulario-contato" method="post">
+        <p class="form-contato"><b>Nome</b><br>
+        <input type=text name="nome" size="45" maxlength="30" placeholder="Digite seu Nome"></p>
+        <p class="form-contato"><b>Email</b><br>
+        <input type=email name="email" size="45" maxlength="40" placeholder="Digite seu Email"></p>
+        <p class="form-contato"><b>O que podemos melhorar?</b><br>
+        <textarea name="mensagem" rows="10" cols="60" wrap="virtual"></textarea></p>
+        <p id="enviar-limpar"><input type="submit" value="Limpar Formulário"> <input type="reset" value="Enviar"></p>
+
+    </form>
+
+<footer id="rodape-contato">
+  <h3>Criado com finalidade de ajudar crianças a entrar no mundo brilhante da programação.</h3>
+  <p id="copy">&copy; CodeDev 2018</p>
+</footer>
+
+
+</body>
+</html>

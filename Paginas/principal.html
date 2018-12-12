@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>CodeDev - Cursos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../_css/principal.css">
+  <link rel="shortcut icon" href="../_imgs/logo1.png" type="image/x-png"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+  <!-- NAVEGADOR  -->
+  <div class="titulo">
+    <img id="logo-titulo" src="../_imgs/CodeDev.png">
+  </div>
+  <div class="navbar">
+    <a href="principal.html"><i class="fas fa-home"></i> Home</a>
+    <a href="principal.html"><i class="fas fa-list-ul"></i> Cursos</a>
+    <a href="fale conosco.html"><i class="far fa-envelope"></i> Fale Conosco</a>
+    <button onclick="myFunction()" class="botao-user"><i class="fas fa-user"></i> Usuário</button>
+    <div id="drop-user" class="dropdown-user">
+      <a href="../index.html">Sair <i class="far fa-times-circle"></i></a>
+    </div>
+    <script>
+      function myFunction() {
+        document.getElementById("drop-user").classList.toggle("show");
+      }
+
+      window.onclick = function(event) {
+        if (!event.target.matches('.botao-user')) {
+
+          var dropdowns = document.getElementsByClassName("dropdown-user");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+  </div>
+   <h1 class="titlecursos">Cursos Online - 100% Gratuito!</h1>
+  <br>
+
+<div class="card">
+  <img src="../_imgs/algoritmo.jpg" id="algoritmo">
+  <div class="container">
+    <h4>Algoritmo</h4> 
+    <p class="detalhes">Aqui você irá aprender um pouco sobre algoritmo</p>
+    <a href="Algoritmo.html" class="ir">IR PARA O CURSO</a> 
+  </div>
+</div>
+
+<div class="card2">
+  <img src="../_imgs/logica de programaçao.jpeg" id="logica">
+  <div class="container">
+    <h4>Lógica de Programação</h4> 
+    <p class="detalhes">Aqui você irá aprender um pouco sobre lógica de programação</p>
+    <a href="Logica.html" class="ir">IR PARA O CURSO</a> 
+  </div>
+</div>
+<footer>
+  <h3>Criado com finalidade de ajudar crianças a entrar no mundo brilhante da programação.</h3>
+  <p id="copy">&copy; CodeDev 2018</p>
+</footer>
+
+
+</body>
+</html>

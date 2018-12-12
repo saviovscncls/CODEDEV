@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="../_css/login.css"/>
+  <link rel="shortcut icon" href="../_imgs/logo1.png" type="image/x-png"/>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+
+<a href="../index.html"> <img src="../_imgs/CodeDev.png" width="500" id="lgtp" /> </a>
+
+<form id="inscrição1">
+      <fieldset id='sign_in'>
+      	<legend class="formulario">LOGIN</legend>
+      	<p> <label for="nome" class="formulario">Nome</label> <input type="text" name="cam_nome" id="nome" size="30" maxlength="50" placeholder="Nome de Usuário"></p>
+       <p> <label for="senha" class="formulario">Senha</label> <input type="password" name="cam_senha" id="senha" size="30" maxlength="8" placeholder="Digite sua Senha"></p><br>
+     </fieldset>
+      </form>
+
+
+      <div class="loading"><button type="submit" class="btn" id="botao">Entrar</button>
+         <script type="text/javascript">
+           var button = document.querySelector('#botao');
+
+button.onclick = function(){
+  this.classList.add('btn-fill');
+  setTimeout(function(){
+    button.classList.add('btn-load');
+  }, 200);
+  setTimeout(function(){
+    button.classList.remove('btn-fill');
+    button.classList.remove('btn-load')
+    button.innerHTML = "Logado!";
+    setTimeout(function(){
+      button.innerHTML = "Entrar";
+    }, 2000);
+  },4000);
+}
+         </script>
+          </div>
+
+</body>
+</html>

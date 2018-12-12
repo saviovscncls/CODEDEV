@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>CodeDev - Curso Lógica de Programação</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../_css/principal.css">
+	<link rel="stylesheet" type="text/css" href="../_css/logica.css">
+	<link rel="shortcut icon" href="../_imgs/logo1.png" type="image/x-png"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+	<!-- NAVEGADOR  -->
+
+	<div class="titulo">
+		<img id="logo-titulo" src="../_imgs/CodeDev.png">
+	</div>
+	<div class="navbar">
+		<a href="principal.html"><i class="fas fa-home"></i> Home</a>
+		<a href="principal.html"><i class="fas fa-list-ul"></i> Cursos</a>
+		<a href="fale conosco.html"><i class="far fa-envelope"></i> Fale Conosco</a>
+		<button onclick="myFunction()" class="botao-user"><i class="fas fa-user"></i> Usuário</button>
+		<div id="drop-user" class="dropdown-user">
+      <a href="../index.html">Sair <i class="far fa-times-circle"></i></a>
+    </div>
+		<script>
+			function myFunction() {
+				document.getElementById("drop-user").classList.toggle("show");
+			}
+
+			window.onclick = function(event) {
+				if (!event.target.matches('.botao-user')) {
+
+					var dropdowns = document.getElementsByClassName("dropdown-user");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('show')) {
+							openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+		</script>
+	</div>
+	<!-- FIM NAVEGADOR  -->
+	<!-- INICIO DO CORPO DO SITE  -->
+	
+	<!-- DESCRIÇÃO DO CURSO  -->
+	<div id="desc">
+		<img src="../_imgs/logica de programaçao.jpeg" width="270px" height="45%">
+		<div id="dentro1">
+			<p id="texto">Curso <br> Lógica de Programação</p>
+			<hr>
+			<br>
+			<button id="inscricao">Inscreva-se</button>
+			
+		</div>
+	</div>
+	<!-- FIM DESCRIÇÃO DO CURSO  -->
+	<!-- INFORMAÇÃO DO CURSO  -->
+	<p id="inf">Informações do Curso</p>
+
+	<!-- LEMBRAR DE COLOCAR O ALERTA SOBRE TER FEITO O CURSO DE LOGICA ANTES DE FAZER O CURSO DE ALGORITMOS -->
+
+	<div id="emenda">
+		<div class="conteudo">
+			<h5 id="nav"><a href="principal.html" class="caminhos">Home</a> / <a href="principal.html" class="caminhos">Cursos</a> / <a href="Logica.html" class="caminhos">Lógica de Programação</a></h5>
+			<h1>Curso Lógica de Programação</h1>
+			<hr width="550px">
+			<p>Aqui você irá aprender de forma simples e descontraida a principal base do mundo da programação. Com brincadeiras simples, mas que lá na frente teram grande impacto no seu desenvolvimento.</p>
+			<br><br>
+			<h4 id="ementa-do-curso">EMENTA DO CURSO</h4>
+
+			<ul>
+				<li> 1 - <a href="variaveis e tipos de dados.html" class="ementa">Curso Lógica de Programação - Variáveis e Tipos de Dados </a></li>
+				<li> 2 - <a href="operadores aritmeticos.html" class="ementa">Curso Lógica de Programação - Operadores Aritméticos </a></li>
+				<li> 3 - <a href="operadores relacionais.html" class="ementa">Curso Lógica de Programação - Operadores Relacionais </a></li>
+				<li> 4 - <a href="operadores logicos.html" class="ementa">Curso Lógica de Programação - Operadores Lógicos </a></li>
+				<li> 5 - <a href="comandos de entrada e saida.html" class="ementa">Curso Lógica de Programação - Comandos de Entrada e Saída </a></li>
+
+			</ul>
+			
+
+		</div>
+	</div>
+	<!-- FIM INFORMAÇÃO DO CURSO  -->
+
+	<!-- FIM DO CORPO DO SITE  -->
+</body>
+</html>
